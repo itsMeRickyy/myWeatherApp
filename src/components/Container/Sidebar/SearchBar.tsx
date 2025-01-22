@@ -24,7 +24,7 @@ function SearchBar() {
           <div className="flex gap-2 bg-white rounded-full">
             <input
               onKeyDown={e => e.key === "Enter" && handleSearchLocation()}
-              className={` ${toggle ? `bg-darkMode-200 text-white placeholder:text-gray-300 ` : `bg-white text-gray-700 placeholder:text-gray-700 `} bg-transparent rounded-md p-2 w-full focus:outline-none`}
+              className={` ${toggle ? `bg-darkMode-200 text-slate-800 placeholder:text-gray-300 ` : `bg-white text-gray-700 placeholder:text-gray-700 `} bg-transparent rounded-md p-2 ml-2 w-full focus:outline-none`}
               type="text"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
